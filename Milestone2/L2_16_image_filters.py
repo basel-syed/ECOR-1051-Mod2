@@ -1,8 +1,4 @@
-"""Milestone 2 P6 Group Submission Filters
 
-Group: L2-16
-
-"""
 from Cimpl import create_color, show, load_image, choose_file, set_color, get_color, Image, copy, get_height, get_width
 
 def two_tone(image: Image, colour_1: str, colour_2: str) -> Image:
