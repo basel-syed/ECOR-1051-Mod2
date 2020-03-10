@@ -5,7 +5,6 @@ def greenChannel(image: Image) -> Image:
 
     new_image = copy(image)
 
-    # Set the intensities of blue and red to 0 in every pixel.
     for x, y, (r, g, b) in image:
         greenFilter = create_color(0, g, 0)
         set_color(new_image, x, y, greenFilter)
