@@ -1,13 +1,7 @@
 from Cimpl import *
 
 def blue_channel(file: Image) -> Image:
-    """Returns an image containing only the blue channel of an original image.
-    Written by: Lachlan Alexander
-
-    >>>blue_channel(file)
-    blue_channel_image
-
-    """
+   
     image = load_image(file)
     blue_channel_image = copy(image)
     for pixel in blue_channel_image:
@@ -19,14 +13,7 @@ def blue_channel(file: Image) -> Image:
 
 
 def check_blue(file: Image) -> bool:
-    """ Returns a true value if the value produced is equal to the expected
-    amount, if the values are not the same then the function returns false.
-    Written by: Lachlan Alexander
-
-    >>>check_blue("p2-original.jpg")
-    True
-    """
-
+    
     image = blue_channel(file)
 
     for x, y, (r, g, b) in image:
